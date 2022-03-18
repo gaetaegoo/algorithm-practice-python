@@ -6,6 +6,9 @@
 다시 '-'가 나올 떄 까지의 수들을 모두 더해준다
 '''
 
+import sys
+input = sys.stdin.readline
+
 n = input().split('-')  # '-'를 제외하고 스플릿
 
 sum = 0
