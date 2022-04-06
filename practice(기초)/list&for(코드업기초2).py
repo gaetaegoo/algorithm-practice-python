@@ -20,7 +20,7 @@
 h, w = map(int, input().split())
 
 # 세로와 가로 길이에 맞게 격자판 생성
-pan = [[0 for j in range(h)] for i in range(w)]
+pan = [[0 for j in range(w)] for i in range(h)]
 
 # 막대의 개수
 n = int(input())
@@ -42,8 +42,8 @@ for i in range(n):
     '''
 
 # 막대가 놓인 격자판 출력
-for i in range(w):
-    for j in range(h):
+for i in range(h):
+    for j in range(w):
         print(pan[i][j], end=' ')
     print()
 
